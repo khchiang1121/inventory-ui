@@ -34,6 +34,9 @@ import ClustersPage from './pages/kubernetes/ClustersPage';
 import PluginsPage from './pages/kubernetes/PluginsPage';
 import ServiceMeshPage from './pages/kubernetes/ServiceMeshPage';
 
+// Ansible Pages
+import AnsibleGroupsPage from './pages/ansible/AnsibleGroupsPage';
+
 // Maintenance Pages
 import MaintenanceSchedulePage from './pages/maintenance/MaintenanceSchedulePage';
 import MaintenanceHistoryPage from './pages/maintenance/MaintenanceHistoryPage';
@@ -214,6 +217,12 @@ const App: React.FC = () => {
                             <Route path={ROUTES.K8S_CLUSTERS} element={<ClustersPage />} />
                             <Route path={ROUTES.K8S_PLUGINS} element={<PluginsPage />} />
                             <Route path={ROUTES.SERVICE_MESH} element={<ServiceMeshPage />} />
+
+                            {/* Ansible Management */}
+                            <Route path={ROUTES.ANSIBLE_GROUPS} element={<AnsibleGroupsPage />} />
+                            <Route path={ROUTES.ANSIBLE_HOSTS} element={<AnsibleGroupsPage />} />
+                            <Route path={ROUTES.ANSIBLE_VARIABLES} element={<AnsibleGroupsPage />} />
+                            <Route path={ROUTES.ANSIBLE_INVENTORY} element={<AnsibleGroupsPage />} />
 
                             {/* Maintenance Management */}
                             <Route path={ROUTES.MAINTENANCE_SCHEDULE} element={<MaintenanceSchedulePage />} />

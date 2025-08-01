@@ -7,6 +7,9 @@ export * from './api/infrastructure';
 // Virtualization types
 export * from './api/virtualization';
 
+// Ansible types
+export * from './api/ansible';
+
 // Component-specific types
 export interface TableColumn {
   id: string;

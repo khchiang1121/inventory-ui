@@ -86,7 +86,7 @@ export const users = {
     apiClient.patch<User>(`${ENDPOINTS.USERS}me/`, data),
 
   uploadAvatar: (id: string, file: File) =>
-    apiClient.uploadFile(`${ENDPOINTS.USERS}${id}/avatar/`, file, 'avatar'),
+    apiClient.uploadFile(`${ENDPOINTS.USERS}${id}/avatar/`, file),
 
   removeAvatar: (id: string) =>
     apiClient.delete(`${ENDPOINTS.USERS}${id}/avatar/`),
@@ -298,7 +298,7 @@ export const systemSettings = {
       };
       uptime: number;
       last_backup: string;
-    }>('/system-info/'),
+    }>('/system-info'),
 
   createBackup: () =>
     apiClient.post<{ backup_id: string; status: string }>('/backup/'),

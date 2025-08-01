@@ -71,6 +71,14 @@ export const API_ENDPOINTS = {
     PERMISSIONS: '/permissions/',
   },
 
+  // Ansible Management
+  ANSIBLE: {
+    GROUPS: '/ansible-groups',
+    GROUP_VARIABLES: '/ansible-group-variables',
+    GROUP_RELATIONSHIPS: '/ansible-group-relationships',
+    HOSTS: '/ansible-hosts',
+  },
+
   // Dashboard and Analytics
   DASHBOARD: {
     STATS: '/dashboard/stats/',
@@ -143,6 +151,13 @@ export const ROUTES = {
   K8S_CLUSTERS: '/kubernetes/clusters',
   K8S_PLUGINS: '/kubernetes/plugins',
   SERVICE_MESH: '/kubernetes/service-mesh',
+  
+  // Ansible
+  ANSIBLE: '/ansible',
+  ANSIBLE_GROUPS: '/ansible/groups',
+  ANSIBLE_HOSTS: '/ansible/hosts',
+  ANSIBLE_VARIABLES: '/ansible/variables',
+  ANSIBLE_INVENTORY: '/ansible/inventory',
   
   // Maintenance
   MAINTENANCE: '/maintenance',

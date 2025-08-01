@@ -159,6 +159,33 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       ],
     },
     {
+      id: 'ansible',
+      label: 'Ansible',
+      icon: Settings,
+      children: [
+        {
+          id: 'groups',
+          label: 'Groups',
+          path: ROUTES.ANSIBLE_GROUPS,
+        },
+        {
+          id: 'hosts',
+          label: 'Hosts',
+          path: ROUTES.ANSIBLE_HOSTS,
+        },
+        {
+          id: 'variables',
+          label: 'Variables',
+          path: ROUTES.ANSIBLE_VARIABLES,
+        },
+        {
+          id: 'inventory',
+          label: 'Inventory',
+          path: ROUTES.ANSIBLE_INVENTORY,
+        },
+      ],
+    },
+    {
       id: 'maintenance',
       label: 'Maintenance',
       icon: Build,
